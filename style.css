@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f9; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* esse itemInput é o nosso input  */
+#itemInput {
+    width: 300px; 
+    padding: 10px;
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    outline: none; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* sombra */
+}
+
+
+#addbutton { /* esse addbutton é o nosso botão */
+    padding: 10px 20px; 
+    font-size: 16px; 
+    color: white; 
+    background-color: #4CAF50; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; /* cursor de mãozinha */
+    transition: background-color 0.3s ease; /* transição de cor esse 0.3s é o tempo que leva para mudar de cor  e esse ease é a forma que ele vai mudar de cor */
+}
+
+
+#addbutton:hover { /* quando passar o mouse por cima do botão ele muda de cor */
+    background-color: #45a049; 
+}
+
+
+#itemList { /* esse itemList é a nossa lista */
+    width: 320px; 
+    margin-top: 20px; 
+}
+
+
+.item { /* esse item é o nosso item da lista */
+    display: flex; 
+    justify-content: space-between; /* alinha os itens da lista */
+    align-items: center; 
+    background-color: white; 
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.texto-tarefa { /* esse texto-tarefa é o nosso texto do item da lista que é nosso span */
+    font-size: 16px; 
+    color: #333; 
+    flex-grow: 1; /* faz com que o texto ocupe todo o espaço disponível */
+    margin-right: 10px; 
+}
+
+
+.delete-button {
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; /* cursor de mãozinha */
+    font-size: 14px; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.delete-button:hover {
+    background-color: #ff1a1a; /
+}
