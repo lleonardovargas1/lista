@@ -6,7 +6,7 @@ function fernanda() {
     if (input.value.trim() === "") { //aqui eu verifico se o valor do input está vazio 
     // se ele estiver vazio ele exibe um alerta pedindo para o usuário digitar uma tarefa
         alert("Por favor, digite uma tarefa!"); 
-        return; // esse return faz com que a função pare de ser executada no caso a função fernanda
+        return; // esse return faz com que a função pare de ser executada no caso a função fernanda 
   }
 
  
@@ -29,20 +29,18 @@ function fernanda() {
 
     });
 
-  
+
     novoItem.appendChild(textoTarefa);  // Aqui, nossa div (novoItem) vai adicionar um elemento filho que no caso é o textoTarefa.
     // O  nosso textoTarefa é o <span> que contém o texto da tarefa digitado pelo usuário no input.
-   
     novoItem.appendChild(botaoDeletar); // aqui e a mesma coisa so que com o botao de deletar, nossa div (novoItem) vai adicionar um elemento filho que
+    
     // no caso é o botaoDeletar que é o botao de deletar a tarefa que foi criada pelo usuário
-
-
     lista.appendChild(novoItem);
-
-
     input.value = ''; // aqui zera o valor que o usuário digitou no depois que ele clicar no botao addbutton
     // esse value é o valor do input que no caso é o texto que o usuário digitou
 }
 
 botao.addEventListener("click", fernanda); // quando nosso usuario clicar no botao  addbutton ele vai chamar a funcao 
 //fernanda que é a nossa função que adiciona uma nova tarefa 
+
+
